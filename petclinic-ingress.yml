@@ -11,7 +11,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-body-size: "64m"
 spec:
   rules:
-    - host: petclinic.local
+    - host: imstudying.tech
       http:
         paths:
           - path: /
