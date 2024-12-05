@@ -12,9 +12,12 @@ spec:
       labels:
         app: petclinic
     spec:
+      nodeSelector:
+        kubernetes.io/arch: amd64  # or arm64 depending on your platform
       containers:
         - name: petclinic
-          image: vhmds/petclinic:v0
+          image: vhmds/petclinic:v0-multiarch  # use a new tag for the multi-arch image
+          imagePullPolicy: Always
           resources:
             requests:
               memory: "512Mi"
