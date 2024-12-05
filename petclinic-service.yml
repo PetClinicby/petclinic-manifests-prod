@@ -9,5 +9,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8080
-# Remove or comment out the following line:
-#   type: NodePort
+  # Removed 'type: NodePort' to use default 'ClusterIP' service type
