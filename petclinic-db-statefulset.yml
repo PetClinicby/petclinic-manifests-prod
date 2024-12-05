@@ -33,12 +33,12 @@ spec:
                   name: petclinic-db-secret
                   key: POSTGRES_DB
             - name: PGDATA
-              value: /var/lib/postgresql/data/pgdata
+              value: /var/lib/postgresql/data
           ports:
             - containerPort: 5432
           volumeMounts:
             - name: data
-              mountPath: /var/lib/postgresql/data/pgdata
+              mountPath: /var/lib/postgresql
   volumeClaimTemplates:
     - metadata:
         name: data
