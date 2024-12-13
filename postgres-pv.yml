@@ -6,7 +6,6 @@ metadata:
   labels:
     type: local
 spec:
-  storageClassName: gp2
   capacity:
     storage: 10Gi
   accessModes:
