@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: petclinic
-          image: vhmds/petclinic:v0-multiarch  # use a new tag for the multi-arch image
+          image: vhmds/petclinic
           imagePullPolicy: Always
           resources:
             requests:
