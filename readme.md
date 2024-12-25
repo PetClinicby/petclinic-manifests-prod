@@ -28,3 +28,8 @@ helm repo update
 ```
 helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.13.2 --set installCRDs=true
 ```
+
+6. Argocd ip
+```
+https://35.193.35.159/
+```
