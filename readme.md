@@ -3,7 +3,8 @@
 ## Steps
 1. Create an EKS cluster:
 ```
-eksctl create cluster --name my-cluster --node-type t3.small --nodegroup-name my-nodes --nodes 2 --nodes-min 1 --nodes-max 3
+gcloud container clusters create petclinic   --zone us-central1-a   --num-nodes 3   --machine-type e2-small --disk-size 20
+gcloud container clusters get-credentials petclinic --zone us-central1-a
 ```
 
 2. Add and update the ingress-nginx repo:
